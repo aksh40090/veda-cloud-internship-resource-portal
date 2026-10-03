@@ -1,0 +1,2 @@
+# After deploying the Worker, replace the placeholder host below with the real Worker URL.
+# /api/* https://YOUR-WORKER.workers.dev/api/:splat 200

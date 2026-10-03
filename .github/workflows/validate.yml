@@ -1,0 +1,13 @@
+name: Validate Portal
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: test -f index.html && test -f assets/app.js && test -f assets/styles.css && test -f data/resources.json && test -f worker/index.js
+      - run: python -m json.tool data/resources.json > /dev/null
+      - run: grep -q "Veda Technology" index.html

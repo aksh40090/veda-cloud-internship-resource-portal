@@ -1,0 +1,8 @@
+name = "veda-internship-resource-api"
+main = "worker/index.js"
+compatibility_date = "2026-10-02"
+
+# Optional R2:
+# [[r2_buckets]]
+# binding = "RESOURCES_BUCKET"
+# bucket_name = "veda-internship-resources"

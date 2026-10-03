@@ -1,0 +1,91 @@
+{
+  "domains": [
+    {
+      "type": "Domain",
+      "title": "Cloud Computing",
+      "description": "Cloud compute, networking, storage and deployment fundamentals."
+    },
+    {
+      "type": "Domain",
+      "title": "DevOps & CI/CD",
+      "description": "Version control, automation, testing and deployment workflows."
+    },
+    {
+      "type": "Domain",
+      "title": "Web Development",
+      "description": "HTML, CSS and JavaScript fundamentals."
+    },
+    {
+      "type": "Domain",
+      "title": "Infrastructure as Code",
+      "description": "Reusable infrastructure definitions and environment configuration."
+    },
+    {
+      "type": "Domain",
+      "title": "Containers & Kubernetes",
+      "description": "Container images, services, scaling and rolling updates."
+    },
+    {
+      "type": "Domain",
+      "title": "Database & Performance",
+      "description": "Indexes, query plans, caching and performance troubleshooting."
+    }
+  ],
+  "projects": [
+    {
+      "type": "Project",
+      "title": "Cloud Resource Portal",
+      "description": "A cloud-hosted portal with static hosting, object storage and a serverless endpoint."
+    },
+    {
+      "type": "Project",
+      "title": "Multi-Environment IaC",
+      "description": "Provision consistent environments from parameterized infrastructure code."
+    },
+    {
+      "type": "Project",
+      "title": "Load-Balanced Web Service",
+      "description": "Place multiple backend servers behind a cloud load balancer."
+    }
+  ],
+  "resources": [
+    {
+      "type": "Resource",
+      "title": "Cloud Networking",
+      "description": "VPC/VNet concepts, subnets, routes and security boundaries."
+    },
+    {
+      "type": "Resource",
+      "title": "Serverless APIs",
+      "description": "Return resource metadata without maintaining a server."
+    },
+    {
+      "type": "Resource",
+      "title": "Object Storage",
+      "description": "Store selected non-sensitive documents and images."
+    },
+    {
+      "type": "Resource",
+      "title": "DNS & HTTPS",
+      "description": "Publish a secure custom-domain experience."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What is this portal?",
+      "answer": "A learning-oriented prototype for public internship domains, projects, FAQs and resources."
+    },
+    {
+      "question": "Does it use private intern data?",
+      "answer": "No. It intentionally uses public/non-sensitive sample metadata."
+    },
+    {
+      "question": "Can cloud storage be used?",
+      "answer": "Yes. The project includes an optional object-storage integration pattern."
+    },
+    {
+      "question": "What does the serverless endpoint do?",
+      "answer": "The Worker returns simple resource metadata as JSON."
+    }
+  ]
+}

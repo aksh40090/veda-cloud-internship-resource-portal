@@ -1,0 +1,4 @@
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));let data;
+const card=x=>`<article class="card"><span class="tag">${esc(x.type)}</span><h3>${esc(x.title)}</h3><p>${esc(x.description)}</p></article>`;
+function render(q=""){const f=q.toLowerCase(),ok=x=>!f||JSON.stringify(x).toLowerCase().includes(f);domainGrid.innerHTML=data.domains.filter(ok).map(card).join("");projectGrid.innerHTML=data.projects.filter(ok).map(card).join("");resourceGrid.innerHTML=data.resources.filter(ok).map(card).join("");faqList.innerHTML=data.faqs.filter(ok).map(x=>`<div class="faq"><b>${esc(x.question)}</b><p>${esc(x.answer)}</p></div>`).join("")}
+fetch("data/resources.json").then(r=>r.json()).then(x=>{data=x;render()});search.oninput=e=>render(e.target.value);clear.onclick=()=>{search.value="";render()};
